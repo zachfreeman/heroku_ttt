@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttt/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hellodjango/urls.py" afterPath="$PROJECT_DIR$/hellodjango/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/views.py" afterPath="$PROJECT_DIR$/ttt/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372258507891" ignored="false" />
-    <file path="/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372269668845" ignored="false" />
+    <file path="/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372270560095" ignored="false" />
     <file path="/urls.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372269755976" ignored="false" />
     <file path="/settings.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372259502192" ignored="false" />
+    <file path="/base.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372270515265" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="65" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="8" column="45" selection-start="274" selection-end="274" vertical-scroll-proportion="0.16113745">
+              <folding>
+                <element signature="e#26#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,10 +61,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hellodjango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.34241706">
+            <state line="17" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="24" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
@@ -87,9 +98,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/hellodjango/settings.py" />
-        <option value="$PROJECT_DIR$/ttt/views.py" />
         <option value="$PROJECT_DIR$/ttt/urls.py" />
         <option value="$PROJECT_DIR$/hellodjango/urls.py" />
+        <option value="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
+        <option value="$PROJECT_DIR$/ttt/views.py" />
       </list>
     </option>
   </component>
@@ -167,6 +179,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="hellodjango" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -179,6 +235,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt" />
+    </key>
   </component>
   <component name="RunManager" selected="Django server.hellodjango">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -242,6 +304,26 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hellodjango" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="hellodjango" type="Python.DjangoServer" factoryName="Django server">
@@ -371,9 +453,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/views.py">
+    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="65" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+        <state line="9" column="24" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellodjango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -385,10 +474,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellodjango/urls.py">
+    <entry file="file://$PROJECT_DIR$/ttt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.34241706">
-          <folding />
+        <state line="8" column="45" selection-start="274" selection-end="274" vertical-scroll-proportion="0.16113745">
+          <folding>
+            <element signature="e#26#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
