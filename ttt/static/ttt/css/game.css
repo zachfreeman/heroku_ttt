@@ -1,0 +1,56 @@
+#TR, #TL, #TC, #MR, #ML, #MC, #BR, #BL, #BC {
+    color: white;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+#TR, #TL, #MR, #ML, #BR, #BL {
+    width: 8%;
+}
+
+#TL, #ML, #BL {
+    margin-left: 37.5%;
+}
+
+#TR, #MR, #BR {
+    margin-right: 30%;
+}
+
+#TC, #MC, #BC {
+    width: 8%;
+}
+
+#TC, #BC {
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-right-color: black;
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+#ML, #MR {
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+
+#MC {
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-right-color: black;
+    border-right-width: 2px;
+    border-right-style: solid;
+}

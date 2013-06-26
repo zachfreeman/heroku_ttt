@@ -1,0 +1,25 @@
+{% extends "ttt/base.html" %}
+{% load staticfiles %}
+
+{% block css_file %}
+<link type="text/css" rel="stylesheet" href="{% static "ttt/css/game.css" %}">
+{% endblock css_file %}
+
+{% block title %}Tic-Tac-Toe{% endblock title %}
+
+{% block content %}
+    <div id="TL">TL</div>
+    <div id="TC">TC</div>
+    <div id="TR">TR</div>
+    <br>
+    <div id="ML">ML</div>
+    <div id="MC">MC</div>
+    <div id="MR">MR</div>
+    <br>
+    <div id="BL">BL</div>
+    <div id="BC">BC</div>
+    <div id="BR">BR</div>
+    <br>
+    <br>
+{#    <script type="text/javascript" src="{% static "PictureVote/js/tic-tac-toe.js" %}"></script>#}
+{% endblock content %}

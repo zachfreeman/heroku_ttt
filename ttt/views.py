@@ -7,3 +7,6 @@ def base(request):
 
 def ttt_base(request):
     return render(request,'ttt/base.html',{})
+
+def ttt_game(request):
+    return render(request,)
