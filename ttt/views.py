@@ -2,4 +2,4 @@
 from django.http import HttpResponse
 
 def base(request):
-    return HttpResponse("You have created a view on Heroku!")
+    return HttpResponse("I, Zach Freeman, have just created a Heroku-based website!")

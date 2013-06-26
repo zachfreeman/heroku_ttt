@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hellodjango/urls.py" afterPath="$PROJECT_DIR$/hellodjango/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/views.py" afterPath="$PROJECT_DIR$/ttt/views.py" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372258507891" ignored="false" />
-    <file path="/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372259196953" ignored="false" />
+    <file path="/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372259901287" ignored="false" />
     <file path="/urls.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372259730116" ignored="false" />
     <file path="/settings.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372259502192" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="61" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
+            <state line="4" column="82" selection-start="165" selection-end="165" vertical-scroll-proportion="0.08037825">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hellodjango/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="31" selection-start="600" selection-end="600" vertical-scroll-proportion="0.321513">
+            <state line="16" column="31" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,9 +74,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ttt/views.py" />
         <option value="$PROJECT_DIR$/hellodjango/settings.py" />
         <option value="$PROJECT_DIR$/hellodjango/urls.py" />
+        <option value="$PROJECT_DIR$/ttt/views.py" />
       </list>
     </option>
   </component>
@@ -318,16 +318,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/views.py">
+    <entry file="file://$PROJECT_DIR$/hellodjango/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="61" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
+        <state line="16" column="31" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellodjango/urls.py">
+    <entry file="file://$PROJECT_DIR$/ttt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="600" selection-end="600" vertical-scroll-proportion="0.321513">
+        <state line="4" column="82" selection-start="165" selection-end="165" vertical-scroll-proportion="0.08037825">
           <folding />
         </state>
       </provider>
