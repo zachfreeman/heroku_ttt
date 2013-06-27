@@ -22,7 +22,7 @@ function changeBase(elementID){
     var answer = isWon(letter);
     if(answer[0]){
         for(var i=1;i<4;i++){
-            document.getElementById(answer[i]).style.fontWeight = 'bold';
+//            document.getElementById(answer[i]).style.fontWeight = 'bold';
             document.getElementById(answer[i]).style.backgroundColor = 'red';
         }
         winner = letter;
