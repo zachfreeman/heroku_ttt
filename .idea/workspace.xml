@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttt/templates/ttt/404.html" />
       <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt\css\base_new.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hellodjango/settings.py" afterPath="$PROJECT_DIR$/hellodjango/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/views.py" afterPath="$PROJECT_DIR$/ttt/views.py" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372292891547" ignored="false" />
-    <file path="/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372285399821" ignored="false" />
-    <file path="/urls.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372285151948" ignored="false" />
-    <file path="/settings.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372356650113" ignored="false" />
+    <file path="/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357894728" ignored="false" />
+    <file path="/urls.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357775687" ignored="false" />
+    <file path="/settings.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357823789" ignored="false" />
     <file path="/base.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346842034" ignored="false" />
     <file path="/base.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372304230469" ignored="false" />
     <file path="/requirements.txt" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372276896746" ignored="false" />
@@ -25,8 +24,10 @@
     <file path="/tic-tac-toe.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372352877277" ignored="false" />
     <file path="/game.js" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372353645059" ignored="false" />
     <file path="/game.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372355604776" ignored="false" />
-    <file path="$PROJECT_DIR$/../djcode_practice/mysite/mysite/settings.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372356420352" ignored="false" />
+    <file path="$PROJECT_DIR$/../djcode_practice/mysite/mysite/settings.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357824113" ignored="false" />
     <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/templates/PictureVote/404.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372356970776" ignored="false" />
+    <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/urls.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357777237" ignored="false" />
+    <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357900591" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="18" selection-start="866" selection-end="866" vertical-scroll-proportion="0.50236404">
+            <state line="2" column="12" selection-start="56" selection-end="56" vertical-scroll-proportion="0.041514043">
               <folding />
             </state>
           </provider>
@@ -67,7 +68,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="5" column="50" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,12 +160,12 @@
         <option value="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
-        <option value="$PROJECT_DIR$/ttt/views.py" />
         <option value="$PROJECT_DIR$/hellodjango/urls.py" />
         <option value="$PROJECT_DIR$/ttt/urls.py" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/404.html" />
         <option value="$PROJECT_DIR$/hellodjango/settings.py" />
+        <option value="$PROJECT_DIR$/ttt/views.py" />
       </list>
     </option>
   </component>
@@ -538,13 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ttt/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -601,9 +595,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="50" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="866" selection-end="866" vertical-scroll-proportion="0.50236404">
+        <state line="2" column="12" selection-start="56" selection-end="56" vertical-scroll-proportion="0.041514043">
           <folding />
         </state>
       </provider>
