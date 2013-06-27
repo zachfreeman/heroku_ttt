@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt\css\base_new.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/static/ttt/js/game.js" afterPath="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/static/ttt/css/game.css" afterPath="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/templates/ttt/game.html" afterPath="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,12 +16,12 @@
     <file path="/base.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372304230469" ignored="false" />
     <file path="/requirements.txt" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372276896746" ignored="false" />
     <file path="/game.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372305236828" ignored="false" />
-    <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/static/PictureVote/css/ttt.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346601029" ignored="false" />
-    <file path="/ttt.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346600644" ignored="false" />
+    <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/static/PictureVote/css/ttt.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372347854259" ignored="false" />
+    <file path="/ttt.css" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372347853798" ignored="false" />
     <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/static/PictureVote/js/tic-tac-toe.js" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346903718" ignored="false" />
     <file path="/tic-tac-toe.js" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346898335" ignored="false" />
-    <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/templates/PictureVote/tic-tac-toe.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346440376" ignored="false" />
-    <file path="/tic-tac-toe.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372346440376" ignored="false" />
+    <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/templates/PictureVote/tic-tac-toe.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372347710065" ignored="false" />
+    <file path="/tic-tac-toe.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372347705032" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,25 +98,25 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="527" selection-end="527" vertical-scroll-proportion="-15.038462">
+            <state line="28" column="10" selection-start="736" selection-end="736" vertical-scroll-proportion="-18.307692">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="25" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.678487">
+            <state line="42" column="25" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="1" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
+            <state line="76" column="1" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.95981085">
               <folding />
             </state>
           </provider>
@@ -145,10 +146,10 @@
         <option value="$PROJECT_DIR$/ttt/views.py" />
         <option value="$PROJECT_DIR$/ttt/urls.py" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/base.css" />
-        <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
-        <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
+        <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
+        <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
       </list>
     </option>
   </component>
@@ -622,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="1" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="12" selection-start="577" selection-end="577" vertical-scroll-proportion="-13.076923">
@@ -645,14 +639,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="527" selection-end="527" vertical-scroll-proportion="-15.038462">
+        <state line="28" column="10" selection-start="736" selection-end="736" vertical-scroll-proportion="-18.307692">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.678487">
+        <state line="42" column="25" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="1" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.95981085">
           <folding />
         </state>
       </provider>
