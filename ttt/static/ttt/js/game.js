@@ -27,19 +27,27 @@ function changeBase(elementID){
         }
         winner = letter;
         window.alert(letter + " has won the game!");
-        var numWins = parseInt(localStorage.getItem(winner));
+        var numWins = parseInt(localStorage.getItem(winner))
         if(isNaN(numWins)){
             numWins = 1
         }
         numWins = numWins + 1;
         localStorage.setItem(winner,numWins);
-        document.getElementById(winner+"_WIN").innerHTML = winner + ": "+numWins;
+        document.getElementById(winner+"_WIN").innerHTML = winner+": "+numWins;
 //        isPlayAgain();
     }
     else{
         if(countLetter("X") + countLetter("O") == 9){
             tie = true;
             window.alert("It's a tie!");
+            winner = "T";
+            numWins = parseInt(localStorage.getItem(winner));
+            if(isNaN(numWins)){
+                numWins = 1
+            }
+            numWins = numWins + 1;
+            localStorage.setItem(winner,numWins);
+            document.getElementById(winner+"_WIN").innerHTML = winner + ": "+numWins;
 //            isPlayAgain()
         }
     }
@@ -144,8 +152,8 @@ function isPlayAgain(){
 
 //Setting up reset scoreboard button functionality
 document.getElementById("ResetButton").onclick = function(){
-    var letList = Array("X","O")
-    for (var i=0; i<2; i++){
+    var letList = Array("X","O","T")
+    for (var i=0; i<3; i++){
         localStorage.setItem(letList[i],0);
         document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+0;
     }
@@ -153,8 +161,8 @@ document.getElementById("ResetButton").onclick = function(){
 
 //Filling scoreboard upon start
 function fillScoreboard(){
-    var letList = Array("X","O")
-    for (var i=0; i<2; i++){
+    var letList = Array("X","O","T")
+    for (var i=0; i<3; i++){
         var numWins = parseInt(localStorage.getItem(letList[i]))
         if(isNaN(numWins)){
             numWins = 0
