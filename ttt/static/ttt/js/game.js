@@ -31,7 +31,6 @@ function changeBase(elementID){
         if(isNaN(numWins)){
             numWins = 1
         }
-        alert(numWins)
         numWins = numWins + 1
         localStorage.setItem(winner,numWins)
         isPlayAgain()
