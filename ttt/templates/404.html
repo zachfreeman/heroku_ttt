@@ -1,0 +1,20 @@
+{% extends "ttt/base.html" %}
+{% load staticfiles %}
+
+{% block title %}404 Error{% endblock title %}
+
+{% block css_file %}
+<link type="text/css" rel="stylesheet" href="{% static "ttt/css/404.css" %}">
+{% endblock css_file %}
+
+
+{% block content %}
+
+<div id="PictureTitle">
+    <h2>We're sorry, this doesn't seem to be a valid url.</h2>
+</div>
+<div id="PictureBody">
+    <img src="{% static 'ttt/img/lolcat_404.jpg' %}" alt="LOLcat" width="980" height="756">
+</div>
+
+{% endblock content %}
