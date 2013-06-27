@@ -27,6 +27,13 @@ function changeBase(elementID){
         }
         winner = letter;
         window.alert(letter + " has won the game!");
+        var numWins = parseInt(localStorage.getItem(winner))
+        if(isNaN(numWins)){
+            numWins = 1
+        }
+        alert(numWins)
+        numWins = numWins + 1
+        localStorage.setItem(winner,numWins)
         isPlayAgain()
     }
     else{
