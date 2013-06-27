@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttt/static/ttt/css/404.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttt/templates/404.html" />
       <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt\css\base_new.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\templates\ttt\404.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/templates/404.html" afterPath="$PROJECT_DIR$/ttt/templates/404.html" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +59,7 @@
       <file leaf-file-name="404.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.16585366">
+            <state line="16" column="88" selection-start="453" selection-end="453" vertical-scroll-proportion="0.33170733">
               <folding />
             </state>
           </provider>
@@ -705,7 +702,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.16585366">
+        <state line="16" column="88" selection-start="453" selection-end="453" vertical-scroll-proportion="0.33170733">
           <folding />
         </state>
       </provider>
