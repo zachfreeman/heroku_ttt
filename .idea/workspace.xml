@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt\css\base_new.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hellodjango/settings.py" afterPath="$PROJECT_DIR$/hellodjango/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/views.py" afterPath="$PROJECT_DIR$/ttt/views.py" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,10 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="894" selection-end="894" vertical-scroll-proportion="0.51892555">
+            <state line="25" column="46" selection-start="894" selection-end="894" vertical-scroll-proportion="-15.740741">
               <folding />
             </state>
           </provider>
@@ -64,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="50" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+            <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.100472815">
               <folding />
             </state>
           </provider>
@@ -163,8 +163,8 @@
         <option value="$PROJECT_DIR$/ttt/urls.py" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/404.html" />
-        <option value="$PROJECT_DIR$/ttt/views.py" />
         <option value="$PROJECT_DIR$/hellodjango/settings.py" />
+        <option value="$PROJECT_DIR$/ttt/views.py" />
       </list>
     </option>
   </component>
@@ -587,6 +587,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="894" selection-end="894" vertical-scroll-proportion="-15.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="-4.576923">
@@ -596,14 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="894" selection-end="894" vertical-scroll-proportion="0.51892555">
+        <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.100472815">
           <folding />
         </state>
       </provider>
