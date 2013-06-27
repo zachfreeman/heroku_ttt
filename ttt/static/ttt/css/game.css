@@ -55,6 +55,11 @@
     border-right-style: solid;
 }
 
-#X_LABEL, #X_WIN, #Y_LABEL, #Y_WIN  {
-    float: left;
+#X_WIN, #Y_WIN {
+    margin-left: 47.5%;
+}
+
+#ScoreboardTitle {
+    text-align: center;
+    font-weight: bold;
 }
