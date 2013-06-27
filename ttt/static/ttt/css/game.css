@@ -55,7 +55,7 @@
     border-right-style: solid;
 }
 
-#X_WIN, #Y_WIN {
+#X_WIN, #O_WIN {
     margin-left: 47.5%;
 }
 
@@ -64,7 +64,7 @@
     font-weight: bold;
 }
 
-#ResetButton {
+#ResetButton, #PlayAgainButton {
     background-color: steelblue;
     border: 1px solid black;
     border-radius: 5px;

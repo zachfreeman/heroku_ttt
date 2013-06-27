@@ -4,12 +4,12 @@ var tie = null
 function changeBase(elementID){
     if(winner){
         window.alert("There is already a winner!");
-        isPlayAgain()
+//        isPlayAgain()
         return;
     }
     else if(tie){
         window.alert("It's a tie!");
-        isPlayAgain()
+//        isPlayAgain()
         return;
     }
     if (isSquareUsed(elementID)){
@@ -33,14 +33,14 @@ function changeBase(elementID){
         }
         numWins = numWins + 1;
         localStorage.setItem(winner,numWins);
-        document.getElementById(winner+"_WIN").innerHTML = winner+": "+numWins;
-        isPlayAgain();
+        document.getElementById(winner+"_WIN").innerHTML = winner + ": "+numWins;
+//        isPlayAgain();
     }
     else{
         if(countLetter("X") + countLetter("O") == 9){
             tie = true;
             window.alert("It's a tie!");
-            isPlayAgain()
+//            isPlayAgain()
         }
     }
 }
@@ -139,6 +139,15 @@ function isPlayAgain(){
         resetClickers()
         winner = null
         tie = null
+    }
+}
+
+//Setting up reset scoreboard functionality
+document.getElementById("ResetButton").onclick = function(){
+    var letList = Array("X","O")
+    for (var i=0; i<2; i++){
+        localStorage.setItem(letList[i],0);
+        document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+0;
     }
 }
 
