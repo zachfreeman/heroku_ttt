@@ -27,7 +27,7 @@
     <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/templates/PictureVote/404.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372358576048" ignored="false" />
     <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/urls.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357777237" ignored="false" />
     <file path="$PROJECT_DIR$/../djcode_practice/mysite/PictureVote/views.py" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372357900591" ignored="false" />
-    <file path="/404.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372359464846" ignored="false" />
+    <file path="/404.html" changelist="50b4c850-3d12-4a15-af34-5c5f808c79bc" time="1372363440635" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <file leaf-file-name="404.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="88" selection-start="453" selection-end="453" vertical-scroll-proportion="0.33170733">
+            <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2695122">
               <folding />
             </state>
           </provider>
@@ -672,16 +672,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/base.css">
+    <entry file="file://$PROJECT_DIR$/ttt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="538" selection-end="538" vertical-scroll-proportion="-12.423077">
+        <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -693,16 +686,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/views.py">
+    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+        <state line="19" column="12" selection-start="538" selection-end="538" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="88" selection-start="453" selection-end="453" vertical-scroll-proportion="0.33170733">
+        <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2695122">
           <folding />
         </state>
       </provider>
