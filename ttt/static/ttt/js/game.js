@@ -27,13 +27,14 @@ function changeBase(elementID){
         }
         winner = letter;
         window.alert(letter + " has won the game!");
-        var numWins = parseInt(localStorage.getItem(winner))
+        var numWins = parseInt(localStorage.getItem(winner));
         if(isNaN(numWins)){
             numWins = 1
         }
-        numWins = numWins + 1
-        localStorage.setItem(winner,numWins)
-        isPlayAgain()
+        numWins = numWins + 1;
+        localStorage.setItem(winner,numWins);
+        document.getElementById("X_WIN").innerHTML = numWins;
+        isPlayAgain();
     }
     else{
         if(countLetter("X") + countLetter("O") == 9){
