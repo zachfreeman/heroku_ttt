@@ -65,11 +65,15 @@
 }
 
 #ResetButton, #PlayAgainButton {
-    background-color: steelblue;
+    background-color: lightsteelblue;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
     font-size: 8;
+}
+
+#ResetButton:hover, #PlayAgainButton:hover {
+    background-color: steelblue;
 }
 
 #container {
