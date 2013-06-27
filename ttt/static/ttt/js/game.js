@@ -33,7 +33,7 @@ function changeBase(elementID){
         }
         numWins = numWins + 1;
         localStorage.setItem(winner,numWins);
-        document.getElementById("X_WIN").innerHTML = numWins;
+        document.getElementById(winner+"_WIN").innerHTML = winner+": "+numWins;
         isPlayAgain();
     }
     else{
