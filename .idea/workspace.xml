@@ -4,7 +4,6 @@
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt\css\base_new.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hellodjango/settings.py" afterPath="$PROJECT_DIR$/hellodjango/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/views.py" afterPath="$PROJECT_DIR$/ttt/views.py" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +49,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="56" selection-end="56" vertical-scroll-proportion="0.041514043">
+            <state line="25" column="46" selection-start="894" selection-end="894" vertical-scroll-proportion="0.51892555">
               <folding />
             </state>
           </provider>
@@ -164,8 +163,8 @@
         <option value="$PROJECT_DIR$/ttt/urls.py" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/404.html" />
-        <option value="$PROJECT_DIR$/hellodjango/settings.py" />
         <option value="$PROJECT_DIR$/ttt/views.py" />
+        <option value="$PROJECT_DIR$/hellodjango/settings.py" />
       </list>
     </option>
   </component>
@@ -604,7 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="56" selection-end="56" vertical-scroll-proportion="0.041514043">
+        <state line="25" column="46" selection-start="894" selection-end="894" vertical-scroll-proportion="0.51892555">
           <folding />
         </state>
       </provider>
