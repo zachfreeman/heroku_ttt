@@ -142,7 +142,7 @@ function isPlayAgain(){
     }
 }
 
-//Setting up reset scoreboard functionality
+//Setting up reset scoreboard button functionality
 document.getElementById("ResetButton").onclick = function(){
     var letList = Array("X","O")
     for (var i=0; i<2; i++){
@@ -151,4 +151,20 @@ document.getElementById("ResetButton").onclick = function(){
     }
 }
 
+//Filling scoreboard upon start
+function fillScoreboard(){
+    var letList = Array("X","O")
+    for (var i=0; i<2; i++){
+        var numWins = parseInt(localStorage.getItem(letList[i]))
+        if(isNaN(numWins)){
+            numWins = 0
+        }
+        document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+numWins;
+    }
+}
+
+//Setting up reset button
+document.getElementById("PlayAgainButton").onclick = isPlayAgain
+
+fillScoreboard();
 loadClickers();
