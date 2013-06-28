@@ -4,6 +4,7 @@
     <list default="true" id="50b4c850-3d12-4a15-af34-5c5f808c79bc" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Owner\Dropbox\PyProgs\hellodjango\ttt\static\ttt\css\base_new.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt/static/ttt/css/game.css" afterPath="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hellodjango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,7 +132,7 @@
       <file leaf-file-name="game.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.8995272">
+            <state line="89" column="11" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.81914896">
               <folding />
             </state>
           </provider>
@@ -702,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.8995272">
+        <state line="89" column="11" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.81914896">
           <folding />
         </state>
       </provider>
