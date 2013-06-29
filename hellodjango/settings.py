@@ -1,5 +1,7 @@
 # Django settings for hellodjango project.
 
+import os
+
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
@@ -173,7 +175,6 @@ DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # FOR STATIC FILES!
-import os
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')

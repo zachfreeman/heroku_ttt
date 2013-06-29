@@ -52,7 +52,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="18" selection-start="603" selection-end="603" vertical-scroll-proportion="0.38">
+            <state line="176" column="19" selection-start="6316" selection-end="6316" vertical-scroll-proportion="0.68">
               <folding />
             </state>
           </provider>
@@ -740,7 +740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="603" selection-end="603" vertical-scroll-proportion="0.38">
+        <state line="176" column="19" selection-start="6316" selection-end="6316" vertical-scroll-proportion="0.68">
           <folding />
         </state>
       </provider>
