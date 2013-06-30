@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.ttt-square:hover {
+    color: black !important;
+}
+
 #TR, #TL, #MR, #ML, #BR, #BL {
     width: 8%;
 }
