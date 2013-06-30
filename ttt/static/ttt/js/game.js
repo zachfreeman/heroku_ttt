@@ -1,19 +1,23 @@
 var winner = null
 var tie = null
 
-function changeBase(elementID){
+function moveExit(elementID) {
     if(winner){
         window.alert("There is already a winner!");
-//        isPlayAgain()
-        return;
+        return true;
     }
     else if(tie){
         window.alert("It's a tie!");
-//        isPlayAgain()
-        return;
+        return true;
     }
-    if (isSquareUsed(elementID)){
+    else if (isSquareUsed(elementID)){
         window.alert("This square has already been taken!");
+        return true;
+    }
+}
+
+function userMove(elementID){
+    if(moveExit(elementID)){
         return;
     }
     var letter = detLetter();
@@ -22,7 +26,6 @@ function changeBase(elementID){
     var answer = isWon(letter);
     if(answer[0]){
         for(var i=1;i<4;i++){
-//            document.getElementById(answer[i]).style.fontWeight = 'bold';
             document.getElementById(answer[i]).style.backgroundColor = 'red';
         }
         winner = letter;
@@ -34,7 +37,6 @@ function changeBase(elementID){
         numWins = numWins + 1;
         localStorage.setItem(winner,numWins);
         document.getElementById(winner+"_WIN").innerHTML = winner+": "+numWins;
-//        isPlayAgain();
     }
     else{
         if(countLetter("X") + countLetter("O") == 9){
@@ -48,7 +50,6 @@ function changeBase(elementID){
             numWins = numWins + 1;
             localStorage.setItem(winner,numWins);
             document.getElementById(winner+"_WIN").innerHTML = winner + ": "+numWins;
-//            isPlayAgain()
         }
     }
 }
@@ -120,7 +121,7 @@ function isWon(letter){
 
 function loadClickers(){
     function setClicker(elementID){
-        document.getElementById(elementID).onclick = function(){changeBase(elementID);}
+        document.getElementById(elementID).onclick = function(){userMove(elementID);}
     }
     var posList = Array("TR","TL","TC","MR","ML","MC","BR","BL","BC")
     for (var i = 0; i < 9; i++){

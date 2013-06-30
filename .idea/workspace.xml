@@ -67,19 +67,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="4" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.55703884">
+            <state line="15" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="0" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +107,6 @@
       <list>
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/base.css" />
-        <option value="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
         <option value="$PROJECT_DIR$/hellodjango/urls.py" />
         <option value="$PROJECT_DIR$/ttt/urls.py" />
         <option value="$PROJECT_DIR$/ttt/views.py" />
@@ -121,6 +120,7 @@
         <option value="$PROJECT_DIR$/ttt/models.py" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
+        <option value="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
       </list>
     </option>
   </component>
@@ -668,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
@@ -684,7 +677,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.55703884">
+        <state line="15" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
