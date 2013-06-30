@@ -61,7 +61,7 @@
       <file leaf-file-name="game.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="12" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.9">
+            <state line="62" column="17" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.2">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="8" selection-start="2055" selection-end="2055" vertical-scroll-proportion="-16.653847">
+            <state line="45" column="4" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-25.153847">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="21" selection-start="740" selection-end="740" vertical-scroll-proportion="-14.384615">
+            <state line="17" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
@@ -685,21 +685,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="740" selection-end="740" vertical-scroll-proportion="-14.384615">
+        <state line="17" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="-11.115385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="2055" selection-end="2055" vertical-scroll-proportion="-16.653847">
+        <state line="45" column="4" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-25.153847">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="12" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.9">
+        <state line="62" column="17" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.2">
           <folding />
         </state>
       </provider>
