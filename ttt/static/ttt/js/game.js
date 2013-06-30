@@ -1,3 +1,5 @@
+//ADDITIONAL IDEAS - SERVER SIDE LOGIC - FOR TOTAL WINS RECORDED, BY X VS O, ETC., BY GEOGRAPHY
+
 function moveExit(elementID) {
     if(winner){
         window.alert("There is already a winner!");

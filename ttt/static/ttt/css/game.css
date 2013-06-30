@@ -86,13 +86,16 @@
 
 #footer .share {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
 }
 
 #footer .share .btn-like {
     position: absolute;
-    left: 250px;
+    left: 120px;
 }
 #footer .share .btn-tweet {
     position: absolute;
-    left: 375px;
+    left: 220px;
 }
