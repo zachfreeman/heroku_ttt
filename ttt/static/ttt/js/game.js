@@ -1,6 +1,3 @@
-var winner = null
-var tie = null
-
 function moveExit(elementID) {
     if(winner){
         window.alert("There is already a winner!");
@@ -17,29 +14,33 @@ function moveExit(elementID) {
 }
 
 function userMove(elementID){
+    //Logic to determine whether or not move is executed
     if(moveExit(elementID)){
         return;
     }
-    var letter = detLetter();
+    //update square to reflect move
     document.getElementById(elementID).style.color = 'black';
-    document.getElementById(elementID).innerHTML = letter;
-    var answer = isWon(letter);
+    document.getElementById(elementID).innerHTML = playerMove;
+    movesMade.push(elementID);
+    movesRemain.splice(movesRemain.indexOf(elementID),1);
+    //determine if player has won or there is a tie
+    var answer = isWon(playerMove);
     if(answer[0]){
         for(var i=1;i<4;i++){
             document.getElementById(answer[i]).style.backgroundColor = 'red';
         }
-        winner = letter;
-        window.alert(letter + " has won the game!");
+        winner = playerMove;
+        window.alert(playerMove + " has won the game!");
         var numWins = parseInt(localStorage.getItem(winner))
         if(isNaN(numWins)){
-            numWins = 1
+            numWins = 1;
         }
         numWins = numWins + 1;
         localStorage.setItem(winner,numWins);
         document.getElementById(winner+"_WIN").innerHTML = winner+": "+numWins;
     }
     else{
-        if(countLetter("X") + countLetter("O") == 9){
+        if(movesMade.length == 9){
             tie = true;
             window.alert("It's a tie!");
             winner = "T";
@@ -52,11 +53,20 @@ function userMove(elementID){
             document.getElementById(winner+"_WIN").innerHTML = winner + ": "+numWins;
         }
     }
+    //switch player move
+    if(playerMove=="X") {
+        playerMove="O";
+    }
+    else {
+        playerMove="X";
+    }
+    //update innerhtml for hover affect
+    resetClickers(playerMove);
 }
 
 //determine if a move has already been made
 function isSquareUsed(squareID){
-    if(document.getElementById(squareID).innerHTML == "X" || document.getElementById(squareID).innerHTML == "O"){
+    if(movesMade.indexOf(squareID) > -1){
         return true;
     }
     else{
@@ -64,37 +74,18 @@ function isSquareUsed(squareID){
     }
 }
 
-//count the "X" or "O" values
-function countLetter(letter){
-    var letterCount = 0
-    var posList = Array("TR","TL","TC","MR","ML","MC","BR","BL","BC")
-    for (var i = 0; i < 9; i++){
-        if(document.getElementById(posList[i]).innerHTML == letter){
-            letterCount += 1
-        }
-    }
-    return letterCount;
-}
-
-//determine if the
-function detLetter(){
-    if (countLetter("X") > countLetter("O")){
-        return "O"
-    }
-    else{
-        return "X"
-    }
-}
-
 function isWinningSet(elementID1,elementID2,elementID3,letter){
     if( document.getElementById(elementID1).innerHTML == letter &&
         document.getElementById(elementID2).innerHTML == letter &&
-        document.getElementById(elementID3).innerHTML == letter
-        ){
-        return Array(true,elementID1,elementID2,elementID3)
+        document.getElementById(elementID3).innerHTML == letter &&
+        movesMade.indexOf(elementID1) > -1 &&
+        movesMade.indexOf(elementID2) > -1 &&
+        movesMade.indexOf(elementID3) > -1
+            ){
+        return [true,elementID1,elementID2,elementID3];
     }
     else{
-        return Array(false)
+        return [false];
     }
 }
 
@@ -113,47 +104,50 @@ function isWon(letter){
                         winningCheckList[i][2],
                         letter)
         if(answer[0]){
-            return Array(true,winningCheckList[i][0],winningCheckList[i][1],winningCheckList[i][2])
+            return [true,winningCheckList[i][0],winningCheckList[i][1],winningCheckList[i][2]];
         }
     }
-    return Array(false)
+    return [false];
 }
 
 function loadClickers(){
     function setClicker(elementID){
         document.getElementById(elementID).onclick = function(){userMove(elementID);}
     }
-    var posList = Array("TR","TL","TC","MR","ML","MC","BR","BL","BC")
     for (var i = 0; i < 9; i++){
         setClicker(posList[i])
     }
 }
 
-function resetClickers(){
+function resetClickers(letter,userBtnPress){
     function resetClicker(elementID){
-        document.getElementById(elementID).style.color = 'white';
-        document.getElementById(elementID).innerHTML = elementID;
-        document.getElementById(elementID).style.fontWeight = 'normal';
-        document.getElementById(elementID).style.backgroundColor = 'white';
+        document.getElementById(elementID).innerHTML = letter;
+        if(winner || tie || userBtnPress){
+            document.getElementById(elementID).style.color = 'white';
+            document.getElementById(elementID).style.backgroundColor = 'white';
+        }
     }
-    var posList = Array("TR","TL","TC","MR","ML","MC","BR","BL","BC")
-    for (var i = 0; i < 9; i++){
-        resetClicker(posList[i]);
+    for (var i = 0; i < movesRemain.length; i++){
+        resetClicker(movesRemain[i]);
     }
 }
 
 function isPlayAgain(){
     var answer = window.confirm("Play again?");
     if(answer){
-        resetClickers()
-        winner = null
-        tie = null
+        movesRemain = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
+        resetClickers("X",answer);
+        winner = null;
+        tie = null;
+        //reset movesMade array for next game
+        movesMade = [];
+        playerMove = "X";
     }
 }
 
 //Setting up reset scoreboard button functionality
 document.getElementById("ResetButton").onclick = function(){
-    var letList = Array("X","O","T")
+    var letList = ["X","O","T"];
     for (var i=0; i<3; i++){
         localStorage.setItem(letList[i],0);
         document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+0;
@@ -171,6 +165,14 @@ function fillScoreboard(){
         document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+numWins;
     }
 }
+
+//declare global variables
+var winner = null;
+var tie = null;
+var movesMade = [];
+var movesRemain = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
+var playerMove = 'X';
+var posList = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 
 //Setting up reset button
 document.getElementById("PlayAgainButton").onclick = isPlayAgain
