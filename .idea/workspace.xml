@@ -58,85 +58,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1372363440824" expanded="true" signature="270:363" placeholder="..." />
-                <marker date="1372363440824" expanded="true" signature="386:485" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ttt/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="53" selection-start="447" selection-end="447" vertical-scroll-proportion="0.2">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/404.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="three_d.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/three_d.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="68" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="three_d.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/three_d.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="game.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="7" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
+            <state line="5" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="4" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.55703884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="0" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,13 +114,13 @@
         <option value="$PROJECT_DIR$/ttt/templates/ttt/404.html" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/404.css" />
         <option value="$PROJECT_DIR$/ttt/templates/404.html" />
-        <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
-        <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/three_d.html" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/three_d.css" />
         <option value="$PROJECT_DIR$/hellodjango/settings.py" />
         <option value="$PROJECT_DIR$/ttt/models.py" />
+        <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
+        <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
       </list>
     </option>
   </component>
@@ -307,6 +250,58 @@
               <option name="myItemId" value="ttt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellodjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -331,7 +326,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../djcode_practice" />
+    <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -508,7 +504,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25773746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26307365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -609,23 +605,6 @@
         <state line="26" column="20" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1372363440824" expanded="true" signature="270:363" placeholder="..." />
-            <marker date="1372363440824" expanded="true" signature="386:485" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ttt/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -633,28 +612,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/404.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="-2.6153846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -673,16 +633,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
+    <entry file="file://$PROJECT_DIR$/ttt/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="19" selection-start="6316" selection-end="6316" vertical-scroll-proportion="0.0">
+        <state line="13" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.26820388">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+        <state line="6" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.1">
           <folding />
         </state>
       </provider>
@@ -690,6 +650,41 @@
     <entry file="file://$PROJECT_DIR$/ttt/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="53" selection-start="447" selection-end="447" vertical-scroll-proportion="0.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="42" selection-end="42" vertical-scroll-proportion="0.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellodjango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="19" selection-start="6316" selection-end="6316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="4" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.55703884">
           <folding />
         </state>
       </provider>
