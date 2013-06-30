@@ -90,9 +90,9 @@
 
 #footer .share .btn-like {
     position: absolute;
-    left: 40%;
+    left: 250px;
 }
 #footer .share .btn-tweet {
     position: absolute;
-    left: 50%;
+    left: 375px;
 }
