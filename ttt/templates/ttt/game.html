@@ -11,6 +11,10 @@
     <meta property="og:title"           content="Tic-Tac-Toe" />
     <meta property="og:description"     content="Play Tic Tac Toe in Zach's first webapp!">
     <meta property="og:image"           content="http://i.imgur.com/fj4TF2I.jpg" />
+    {#Google plus    #}
+    <meta itemprop="name" content="Zach's Tic-Tac-Toe Game">
+    <meta itemprop="description" content="Zach's first web app, a tic-tac-toe game">
+    <meta itemprop="image" content="http://i.imgur.com/fj4TF2I.jpg">
 {% endblock metaprops %}
 
 
@@ -63,6 +67,16 @@
         <div class="btn-tweet">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dry-river-2020.herokuapp.com/"
                data-text="Zach's first webapp - tic tac toe!" data-via="zfreeman">Tweet</a>
+        </div>
+        <div class="btn-gplus">
+            <div class="g-plusone" data-href="http://dry-river-2020.herokuapp.com/"></div>
+            <script type="text/javascript">
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+</script>
         </div>
     </div>
 {% endblock footer %}

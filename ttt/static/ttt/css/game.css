@@ -93,9 +93,14 @@
 
 #footer .share .btn-like {
     position: absolute;
-    left: 160px;
+    left: 110px;
 }
 #footer .share .btn-tweet {
     position: absolute;
-    left: 230px;
+    left: 200px;
+}
+
+#footer .share .btn-tweet {
+    position: absolute;
+    left: 300px;
 }
