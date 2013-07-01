@@ -93,7 +93,7 @@
 
 #footer .share .btn-like {
     position: absolute;
-    left: 110px;
+    left: 120px;
 }
 #footer .share .btn-tweet {
     position: absolute;
@@ -102,5 +102,5 @@
 
 #footer .share .btn-gplus {
     position: absolute;
-    left: 300px;
+    left: 285px;
 }
