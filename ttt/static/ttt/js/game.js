@@ -148,7 +148,6 @@ function userMove(elementID){
 
     //
     if(computer && !(winner || tie)) {
-        alert('entering');
         if(CvH && playerMove=="X") {
             computerMove();
         }

@@ -88,9 +88,8 @@
       <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="344" column="24" selection-start="10612" selection-end="10612" vertical-scroll-proportion="0.96">
+            <state line="149" column="38" selection-start="4331" selection-end="4331" vertical-scroll-proportion="0.35411766">
               <folding>
-                <element signature="n#!!block;n#loadClickers#0" expanded="false" />
                 <element signature="n#!!block;n#otherPlayer#0" expanded="false" />
                 <element signature="n#!!block;n#createShadowBoard#0" expanded="false" />
                 <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
@@ -700,9 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="344" column="24" selection-start="10612" selection-end="10612" vertical-scroll-proportion="0.96">
+        <state line="149" column="38" selection-start="4331" selection-end="4331" vertical-scroll-proportion="0.35411766">
           <folding>
-            <element signature="n#!!block;n#loadClickers#0" expanded="false" />
             <element signature="n#!!block;n#otherPlayer#0" expanded="false" />
             <element signature="n#!!block;n#createShadowBoard#0" expanded="false" />
             <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
