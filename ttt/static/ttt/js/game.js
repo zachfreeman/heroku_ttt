@@ -340,3 +340,5 @@ loadClickers(posList);
 
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make, or to get a hint
+//CREATE BUTTONS FOR HvH, CvH, and HvC
+//CREATE BUTTON FOR hint
