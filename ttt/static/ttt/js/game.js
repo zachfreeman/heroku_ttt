@@ -148,10 +148,11 @@ function userMove(elementID){
 
     //
     if(computer && !(winner || tie)) {
-        if(CvH && computer && playerMove=="X") {
+        alert('entering');
+        if(CvH && playerMove=="X") {
             computerMove();
         }
-        else if(!CvH && computer && playerMove=="O") {
+        else if(!CvH && playerMove=="O") {
             computerMove();
         }
     }
@@ -324,7 +325,7 @@ var movesRemain = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 var playerMove = 'X';
 var posList = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 var computer = true;
-var CvH = true;
+var CvH = false;
     //setting up winning lists to check
     //for each value of posList, winAssocArray contains an n-tuple of 3-move tuples, which are the possible winners
         //after playing postList in a game
