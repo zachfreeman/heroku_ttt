@@ -58,19 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="12" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.94">
+            <state line="102" column="25" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="72" column="43" selection-start="3034" selection-end="3034" vertical-scroll-proportion="0.54611653">
               <folding />
             </state>
           </provider>
@@ -130,8 +130,8 @@
         <option value="$PROJECT_DIR$/ttt/models.py" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
-        <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
+        <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
       </list>
     </option>
   </component>
@@ -690,16 +690,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="102" column="25" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
+    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="12" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.94">
+        <state line="72" column="43" selection-start="3034" selection-end="3034" vertical-scroll-proportion="0.54611653">
           <folding />
         </state>
       </provider>
