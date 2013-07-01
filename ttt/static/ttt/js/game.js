@@ -5,12 +5,75 @@ function loadClickers(posList){
     function setClicker(elementID){
         document.getElementById(elementID).onclick = function(){userMove(elementID);}
     }
-    for (var i = 0; i < 9; i++){
+    for (var i = 0; i < posList.length; i++){
         setClicker(posList[i]);
     }
 }
 
 //RELATED TO PLAYER MOVES
+function computerMove() {
+    var cornerList = ['TR','TL','BL','BR'];
+    //alert('Computer thoughts:\nDo I have the first move?');
+    if(movesMade.length==0) {
+        //randomly pick a corner
+        var ans = cornerList[Math.floor(Math.random()*5)];
+        //alert('move '+ans+' is the one!');
+        userMove(ans);
+        return;
+    }
+    //alert('Computer thoughts:\nCan I win with the next move?');
+    ans = findWinningMove(playerMove);
+    if(ans[0]) {
+        //alert('move '+ans[1]+' is the one!');
+        userMove(ans[1]);
+        return;
+    }
+    //alert('Computer thoughts:\nCan the opponent win with the next move?');
+    ans = findWinningMove(otherPlayer(playerMove));
+    if(ans[0]) {
+        //alert('move '+ans[1]+' is the one!');
+        userMove(ans[1]);
+        return;
+    }
+    //alert('Computer thoughts:\nIs the center free?');
+    if(!(isSquareUsed('MC'))) {
+        //alert('move MC is the one!');
+        userMove('MC');
+        return;
+    }
+    //alert('Computer thoughts:\nIs there a corner free?');
+    for(var i=0;i<4;i++) {
+        var goHere = !(isSquareUsed(cornerList[i]));
+        if(goHere) {
+            //alert('showme');
+            //alert('move ' + cornerList[i] + ' is the one!');
+            userMove(cornerList[i]);
+            return;
+        }
+    }
+    //alert('Computer thoughts:\nTake whatever is left.');
+    //alert('move ' + movesRemain[0] + ' is the one!');
+    userMove(movesRemain[0]);
+}
+
+
+function otherPlayer(player) {
+    if(player=="X") {
+        return "O";
+    }
+    else {
+        return "X";
+    }
+}
+
+//set up a shadow board drives the win/hint/computer logic, in parallel with the viewable board
+function createShadowBoard() {
+    var shadowBoardArray = {};
+    for (var i = 0; i < posList.length; i++){
+        shadowBoardArray[posList[i]] = "";
+    }
+    return shadowBoardArray;
+}
 
 //determine if a move has already been made in that square
 function isSquareUsed(squareID){
@@ -32,18 +95,22 @@ function moveExit(elementID) {
         window.alert("It's a tie!");
         return true;
     }
-    else if (isSquareUsed(elementID)){
+    else if (elementID && isSquareUsed(elementID)){
         window.alert("This square has already been taken!");
         return true;
     }
 }
 
 //update the square once a move has been made
-function updateSquare(elementID) {
+function updateVisibleSquare(elementID) {
     document.getElementById(elementID).style.color = 'black';
     document.getElementById(elementID).innerHTML = playerMove;
+}
+
+function updateShadowLogic(elementID) {
     movesMade.push(elementID);
     movesRemain.splice(movesRemain.indexOf(elementID),1);
+    shadowBoardArray[elementID] = playerMove;
 }
 
 //control the actions on user move
@@ -53,7 +120,8 @@ function userMove(elementID){
         return;
     }
     //update square to reflect move
-    updateSquare(elementID);
+    updateVisibleSquare(elementID);
+    updateShadowLogic(elementID);
     //determine if player has won or there is a tie
     var answer = isWon(playerMove,elementID);
     if(answer[0]){
@@ -73,16 +141,23 @@ function userMove(elementID){
         }
     }
     //switch player move
-    if(playerMove=="X") {
-        playerMove="O";
-    }
-    else {
-        playerMove="X";
-    }
+    playerMove = otherPlayer(playerMove);
+
     //update innerhtml for hover affect
     resetClickers(playerMove);
-    findWinningMove();
+
+    //
+    if(computer && !(winner || tie)) {
+        if(CvH && computer && playerMove=="X") {
+            computerMove();
+        }
+        else if(!CvH && computer && playerMove=="O") {
+            computerMove();
+        }
+    }
 }
+
+
 
 //RELATED TO DETERMINING IF THERE IS A WINNER
 function createWinAssocArray() {
@@ -122,14 +197,11 @@ function createWinAssocArray() {
 
 //determines whether or not a given set of 3 squares on the board is a winner for a certain player
 function isWinningSet(elementID1,elementID2,elementID3,player){
-    if( document.getElementById(elementID1).innerHTML == player &&
-        document.getElementById(elementID2).innerHTML == player &&
-        document.getElementById(elementID3).innerHTML == player &&
-        movesMade.indexOf(elementID1) > -1 &&
-        movesMade.indexOf(elementID2) > -1 &&
-        movesMade.indexOf(elementID3) > -1
-            ){
-        return [true,elementID1,elementID2,elementID3];
+    if( shadowBoardArray[elementID1] == player &&
+        shadowBoardArray[elementID2] == player &&
+        shadowBoardArray[elementID3] == player
+       ){
+            return [true,elementID1,elementID2,elementID3];
     }
     else{
         return [false];
@@ -180,6 +252,10 @@ function isPlayAgain(){
         //reset movesMade array for next game
         movesMade = [];
         playerMove = "X";
+        shadowBoardArray = createShadowBoard();
+        if(CvH) {
+            computerMove();
+        }
     }
 }
 
@@ -224,19 +300,21 @@ function fillScoreboard(){
     //for each remaining move, swap the
 //a move preventing a win for the other player
 //a corner move
-var findWinningMove = function() {
+//a middle move
+//a side-middle move
+var findWinningMove = function(player) {
+    //alert('entering findWinningMove');
     for(var i=0;i<movesRemain.length;i++) {
-        movesMade.push(movesRemain[i]);
-        var ans = isWon(playerMove,movesRemain[i]);
-        alert('checking move ' + movesRemain[i] +':' + ans);
-        movesMade.pop();
+        shadowBoardArray[movesRemain[i]] = player;
+        var ans = isWon(player,movesRemain[i]);
+        //alert('checking move ' + movesRemain[i] +':' + ans);
+        shadowBoardArray[movesRemain[i]] = '';
         if(ans[0]) {
-            alert('move '+movesRemain[i]+' is the one!');
-            return;
+            return [true,movesRemain[i]];
         }
     }
+    return [false];
 }
-
 
 //declare global variables
 var winner = null;
@@ -245,10 +323,14 @@ var movesMade = [];
 var movesRemain = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 var playerMove = 'X';
 var posList = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
+var computer = true;
+var CvH = true;
     //setting up winning lists to check
     //for each value of posList, winAssocArray contains an n-tuple of 3-move tuples, which are the possible winners
         //after playing postList in a game
+
 var winAssocArray = createWinAssocArray();
+var shadowBoardArray = createShadowBoard();
 
 //Setting up reset button
 document.getElementById("PlayAgainButton").onclick = isPlayAgain;

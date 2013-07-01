@@ -61,7 +61,7 @@
       <file leaf-file-name="game.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="13" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,9 +91,9 @@
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!block;n#loadClickers#0" expanded="false" />
+                <element signature="n#!!block;n#otherPlayer#0" expanded="false" />
+                <element signature="n#!!block;n#createShadowBoard#0" expanded="false" />
                 <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
-                <element signature="n#!!block;n#moveExit#0" expanded="false" />
-                <element signature="n#!!block;n#updateSquare#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -679,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="13" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -703,9 +703,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!block;n#loadClickers#0" expanded="false" />
+            <element signature="n#!!block;n#otherPlayer#0" expanded="false" />
+            <element signature="n#!!block;n#createShadowBoard#0" expanded="false" />
             <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
-            <element signature="n#!!block;n#moveExit#0" expanded="false" />
-            <element signature="n#!!block;n#updateSquare#0" expanded="false" />
           </folding>
         </state>
       </provider>
