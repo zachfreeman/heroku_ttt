@@ -44,15 +44,26 @@
     <div id="BR" class="ttt-square">X</div>
     <br>
     <br>
-    <div id="container">
-        <input type="button" id="PlayAgainButton" value="Play Again">
+    <div id="playbtncontainer">
+        <table id="tablecontainer">
+            <tr>
+                <td>
+                    <input type="button" class="MainBtn" id="PlayAgainButton" value="Play Again">
+                    <ul id='buttonlist'>
+                        <input type="button" id="PlayButtonHvH" class="PlaySettingsBtn" value="HvH">
+                        <input type="button" id="PlayButtonHvC" class="PlaySettingsBtn" value="HvC">
+                        <input type="button" id="PlayButtonCvH" class="PlaySettingsBtn" value="CvH">
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </div>
     <div id="ScoreboardTitle">Scoreboard</div>
     <div id="X_WIN">X: 0</div>
     <div id="O_WIN">O: 0</div>
     <div id="T_WIN">T: 0</div>
     <div id="container">
-        <input type="button" id="ResetButton" value="Reset Scoreboard">
+        <input type="button" class="MainBtn" id="ResetButton" value="Reset Scoreboard">
     </div>
     <script type="text/javascript" src="{% static "ttt/js/game.js" %}"></script>
 {% endblock content %}

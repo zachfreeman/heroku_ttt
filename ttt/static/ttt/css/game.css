@@ -1,3 +1,12 @@
+/*General styling for whole page, centering and creating frame*/
+#head, #content, #footer {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+}
+
+/*Board related styling*/
 .ttt-square {
     color: white;
     background-color: white;
@@ -43,7 +52,6 @@
     border-top-style: solid;
 }
 
-
 #MC {
     border-bottom-color: black;
     border-bottom-width: 2px;
@@ -59,16 +67,22 @@
     border-right-style: solid;
 }
 
-#X_WIN, #O_WIN, #T_WIN {
-    margin-left: 47.5%;
-}
-
+/*Scoreboard styling*/
 #ScoreboardTitle {
     text-align: center;
     font-weight: bold;
 }
 
-#ResetButton, #PlayAgainButton {
+#X_WIN, #O_WIN, #T_WIN {
+    margin-left: 47.5%;
+}
+
+/*Play again button stylings*/
+#tablecontainer {
+    background-color: green;
+}
+
+.MainBtn {
     background-color: lightsteelblue;
     border: 1px solid black;
     border-radius: 5px;
@@ -76,21 +90,59 @@
     font-size: 8;
 }
 
-#ResetButton:hover, #PlayAgainButton:hover {
+.MainBtn:hover {
     background-color: steelblue;
 }
 
-#container {
+#playbtncontainer, #resetcontainer {
     text-align: center;
 }
 
-#head, #content, #footer {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px;
+#playbtncontainer {
+    background-color: red;
 }
 
+#PlayAgainButton {
+    width: 125px;
+}
+
+/*Mode of play button styling*/
+#buttonlist {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.PlaySettingsBtn {
+    display: block;
+    float: left;
+    width: 40px;
+    background-color: lightsteelblue;
+    /*border-radius: 5px;*/
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#PlayButtonHvH {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid black;
+    border-right: 0.5px solid black;
+}
+
+#PlayButtonCvH {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid black;
+    border-left: 0.5px solid black;
+}
+
+#PlayButtonHvC {
+    border-right: 0.5px solid black;
+    border-left: 0.5px solid black;
+}
+
+/*footer button work*/
 #footer .share .btn-like {
     position: absolute;
     left: 120px;

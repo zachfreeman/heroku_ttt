@@ -253,7 +253,7 @@ function isPlayAgain(){
         movesMade = [];
         playerMove = "X";
         shadowBoardArray = createShadowBoard();
-        if(CvH) {
+        if(CvH && computer) {
             computerMove();
         }
     }
@@ -323,7 +323,7 @@ var movesMade = [];
 var movesRemain = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 var playerMove = 'X';
 var posList = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
-var computer = true;
+var computer = false;
 var CvH = false;
     //setting up winning lists to check
     //for each value of posList, winAssocArray contains an n-tuple of 3-move tuples, which are the possible winners
@@ -342,3 +342,5 @@ loadClickers(posList);
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make, or to get a hint
 //CREATE BUTTONS FOR HvH, CvH, and HvC
 //CREATE BUTTON FOR hint
+
+//Chris Chiampa - cchiampa@mit.edu - 617.258.5605
