@@ -10,6 +10,42 @@ function loadClickers(posList){
     }
 }
 
+//At the beginning of page load, bind play buttons to opponent settings
+function loadPlayButtons(playList){
+    function setPlayButton(elementID){
+        document.getElementById(elementID).onclick = function(){setPlay(elementID);}
+    }
+    for (var i = 0; i < playList.length; i++){
+        setPlayButton(playPrefix+playList[i]);
+    }
+}
+
+function setPlay(elementID) {
+    if(elementID.slice(-3)==playButtonSelected) {
+        return;
+    }
+    else {
+        document.getElementById(playPrefix+playButtonSelected).style.backgroundColor = 'lightsteelblue';
+        playButtonSelected = elementID.slice(-3);
+        document.getElementById(playPrefix+playButtonSelected).style.backgroundColor = 'steelblue';
+        if(elementID==playPrefix+"HvC") {
+            computer = true;
+            CvH = false;
+//            alert("Next game played will be against a computer, human goes first!");
+        }
+        else if(elementID==playPrefix+"HvH") {
+            computer = false;
+            CvH = false;
+//            alert("Next game played will be against a human!");
+        }
+        else if(elementID==playPrefix+"CvH") {
+            computer = true;
+            CvH = true;
+//            alert("Next game played will be against a computer, computer goes first!");
+        }
+    }
+}
+
 //RELATED TO PLAYER MOVES
 function computerMove() {
     var cornerList = ['TR','TL','BL','BR'];
@@ -325,6 +361,9 @@ var playerMove = 'X';
 var posList = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 var computer = false;
 var CvH = false;
+var playList = ["HvH","HvC","CvH"]
+var playPrefix = "play-button-"
+var playButtonSelected = "HvH"
     //setting up winning lists to check
     //for each value of posList, winAssocArray contains an n-tuple of 3-move tuples, which are the possible winners
         //after playing postList in a game
@@ -337,6 +376,7 @@ document.getElementById("play-again-button").onclick = isPlayAgain;
 
 fillScoreboard();
 loadClickers(posList);
+loadPlayButtons(playList);
 
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make, or to get a hint
