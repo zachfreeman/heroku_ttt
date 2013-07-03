@@ -4,6 +4,7 @@ h1 {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /*Board related styling*/
@@ -71,20 +72,9 @@ h1 {
     border-right-style: solid;
 }
 
-/*Scoreboard styling*/
-#scoreboard-title {
-    text-align: center;
-    font-weight: bold;
-}
-
-#X_WIN, #O_WIN, #T_WIN {
-    margin-left: 47.5%;
-}
-
 /*Play again button stylings*/
 #play-btn-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     position: relative;
     width: 150px;
     margin-bottom: 10px;
@@ -116,12 +106,9 @@ button {
 
 #play-again-button {
     width: 100%;
-    /*width: 100px;*/
     margin:auto;
-    /*margin-bottom: 5px;*/
     border-radius: 5px;
     float: none;
-    /*position: relative;*/
 }
 
 button:hover {
@@ -141,6 +128,35 @@ button:hover {
 #PlayButtonHvC {
     border-right: 0.75px solid black;
     border-left: 0.755px solid black;
+}
+
+/*Scoreboard styling*/
+#scoreboard-container {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 150px;
+
+}
+
+#scoreboard-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#X_WIN, #O_WIN, #T_WIN {
+    text-align: center;
+}
+
+/*Reset button styling*/
+#reset-btn-container {
+    margin: auto;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#reset-btn {
+    width: 100%;
+    border-radius: 5px;
 }
 
 /*footer button work*/
