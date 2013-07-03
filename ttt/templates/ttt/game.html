@@ -17,7 +17,6 @@
     <meta itemprop="image" content="http://i.imgur.com/fj4TF2I.jpg">
 {% endblock metaprops %}
 
-
 {% block title %}Tic-Tac-Toe{% endblock title %}
 
 {% block content %}
@@ -31,39 +30,37 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div id="TL" class="ttt-square">X</div>
-    <div id="TC" class="ttt-square">X</div>
-    <div id="TR" class="ttt-square">X</div>
-    <br>
-    <div id="ML" class="ttt-square">X</div>
-    <div id="MC" class="ttt-square">X</div>
-    <div id="MR" class="ttt-square">X</div>
-    <br>
-    <div id="BL" class="ttt-square">X</div>
-    <div id="BC" class="ttt-square">X</div>
-    <div id="BR" class="ttt-square">X</div>
-    <br>
-    <br>
-    <div id="playbtncontainer">
-        <table id="tablecontainer">
-            <tr>
-                <td>
-                    <input type="button" class="MainBtn" id="PlayAgainButton" value="Play Again">
-                    <ul id='buttonlist'>
-                        <input type="button" id="PlayButtonHvH" class="PlaySettingsBtn" value="HvH">
-                        <input type="button" id="PlayButtonHvC" class="PlaySettingsBtn" value="HvC">
-                        <input type="button" id="PlayButtonCvH" class="PlaySettingsBtn" value="CvH">
-                    </ul>
-                </td>
-            </tr>
-        </table>
+    <h1>Tic-Tac-Toe</h1>
+
+    <div id="ttt-board-container">
+        <div id="TL" class="ttt-square">X</div>
+        <div id="TC" class="ttt-square">X</div>
+        <div id="TR" class="ttt-square">X</div>
+        <br>
+        <div id="ML" class="ttt-square">X</div>
+        <div id="MC" class="ttt-square">X</div>
+        <div id="MR" class="ttt-square">X</div>
+        <br>
+        <div id="BL" class="ttt-square">X</div>
+        <div id="BC" class="ttt-square">X</div>
+        <div id="BR" class="ttt-square">X</div>
     </div>
-    <div id="ScoreboardTitle">Scoreboard</div>
-    <div id="X_WIN">X: 0</div>
-    <div id="O_WIN">O: 0</div>
-    <div id="T_WIN">T: 0</div>
-    <div id="container">
-        <input type="button" class="MainBtn" id="ResetButton" value="Reset Scoreboard">
+    <div id="play-btn-container">
+        <menu class="group">
+            <button id="play-again-button">Play Again</button>
+            <button id="PlayButtonHvH">HvH</button>
+            <button id="PlayButtonHvC">HvC</button>
+            <button id="PlayButtonCvH">CvH</button>
+        </menu>
+    </div>
+    <div id="scoreboard-container">
+        <div class="score-menu" id="scoreboard-title">Scoreboard</div>
+        <div class="score-menu" id="X_WIN">X: 0</div>
+        <div class="score-menu" id="O_WIN">O: 0</div>
+        <div class="score-menu" id="T_WIN">T: 0</div>
+    </div>
+    <div id="reset-btn-container">
+        <button id="reset-btn">Reset Scoreboard</button>
     </div>
     <script type="text/javascript" src="{% static "ttt/js/game.js" %}"></script>
 {% endblock content %}

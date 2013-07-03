@@ -1,12 +1,16 @@
 /*General styling for whole page, centering and creating frame*/
-#head, #content, #footer {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px;
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 /*Board related styling*/
+#ttt-board-container {
+    margin-bottom: 30px;
+}
+
 .ttt-square {
     color: white;
     background-color: white;
@@ -68,7 +72,7 @@
 }
 
 /*Scoreboard styling*/
-#ScoreboardTitle {
+#scoreboard-title {
     text-align: center;
     font-weight: bold;
 }
@@ -78,68 +82,65 @@
 }
 
 /*Play again button stylings*/
-#tablecontainer {
-    background-color: green;
+#play-btn-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 150px;
+    margin-bottom: 10px;
 }
 
-.MainBtn {
+menu {
+    margin: auto;
+    menu: 100%;
+    width: 150px;
+    position: relative;
+}
+
+/*clearfixing the menu*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
     background-color: lightsteelblue;
     border: 1px solid black;
-    border-radius: 5px;
     text-align: center;
     font-size: 8;
+    width: 50px;
+    display: block;
+    float: left;
 }
 
-.MainBtn:hover {
+#play-again-button {
+    width: 100%;
+    /*width: 100px;*/
+    margin:auto;
+    /*margin-bottom: 5px;*/
+    border-radius: 5px;
+    float: none;
+    /*position: relative;*/
+}
+
+button:hover {
     background-color: steelblue;
 }
 
-#playbtncontainer, #resetcontainer {
-    text-align: center;
-}
-
-#playbtncontainer {
-    background-color: red;
-}
-
-#PlayAgainButton {
-    width: 125px;
-}
-
-/*Mode of play button styling*/
-#buttonlist {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.PlaySettingsBtn {
-    display: block;
-    float: left;
-    width: 40px;
-    background-color: lightsteelblue;
-    /*border-radius: 5px;*/
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
 #PlayButtonHvH {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-left: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
     border-right: 0.5px solid black;
 }
 
 #PlayButtonCvH {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-right: 1px solid black;
+    border-radius: 0px 5px 5px 0px;
     border-left: 0.5px solid black;
 }
 
 #PlayButtonHvC {
-    border-right: 0.5px solid black;
-    border-left: 0.5px solid black;
+    border-right: 0.75px solid black;
+    border-left: 0.755px solid black;
 }
 
 /*footer button work*/
