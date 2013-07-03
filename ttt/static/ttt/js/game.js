@@ -262,7 +262,7 @@ function isPlayAgain(){
 //SCOREBOARD RELATED
 
 //Setting up reset scoreboard button functionality
-document.getElementById("ResetButton").onclick = function(){
+document.getElementById("reset-btn").onclick = function(){
     var letList = ["X","O","T"];
     for (var i=0; i<3; i++){
         localStorage.setItem(letList[i],0);
@@ -333,7 +333,7 @@ var winAssocArray = createWinAssocArray();
 var shadowBoardArray = createShadowBoard();
 
 //Setting up reset button
-document.getElementById("PlayAgainButton").onclick = isPlayAgain;
+document.getElementById("play-again-button").onclick = isPlayAgain;
 
 fillScoreboard();
 loadClickers(posList);

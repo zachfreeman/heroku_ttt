@@ -115,17 +115,17 @@ button:hover {
     background-color: steelblue;
 }
 
-#PlayButtonHvH {
+#play-button-HvH {
     border-radius: 5px 0px 0px 5px;
     border-right: 0.5px solid black;
 }
 
-#PlayButtonCvH {
+#play-button-CvH {
     border-radius: 0px 5px 5px 0px;
     border-left: 0.5px solid black;
 }
 
-#PlayButtonHvC {
+#play-button-HvC {
     border-right: 0.75px solid black;
     border-left: 0.755px solid black;
 }
