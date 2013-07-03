@@ -161,6 +161,11 @@ button:hover {
 }
 
 /*footer button work*/
+#footer .share {
+    position: relative;
+    margin-bottom: 20px;
+}
+
 #footer .share .btn-like {
     position: absolute;
     left: 120px;

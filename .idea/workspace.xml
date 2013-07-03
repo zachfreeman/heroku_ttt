@@ -58,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="167" column="0" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.72">
               <folding>
                 <element signature="e#215#243#0" expanded="false" />
                 <element signature="e#257#348#0" expanded="false" />
@@ -81,7 +81,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="36" selection-start="2177" selection-end="2177" vertical-scroll-proportion="-4.8846154">
+            <state line="68" column="8" selection-start="2737" selection-end="2737" vertical-scroll-proportion="-12.730769">
               <folding>
                 <element signature="n#block#0;n#!!top" expanded="false" />
                 <element signature="n#block#1;n#!!top" expanded="false" />
@@ -101,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="16" selection-start="765" selection-end="765" vertical-scroll-proportion="0.454435">
+            <state line="22" column="16" selection-start="765" selection-end="765" vertical-scroll-proportion="-13.851851">
               <folding>
                 <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
               </folding>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/ttt/static/ttt/css/base.css" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/base.html" />
         <option value="$PROJECT_DIR$/ttt/templates/ttt/game.html" />
-        <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
         <option value="$PROJECT_DIR$/ttt/static/ttt/js/game.js" />
+        <option value="$PROJECT_DIR$/ttt/static/ttt/css/game.css" />
       </list>
     </option>
   </component>
@@ -710,32 +710,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="22" column="16" selection-start="765" selection-end="765" vertical-scroll-proportion="-13.851851">
           <folding>
-            <element signature="e#215#243#0" expanded="false" />
-            <element signature="e#257#348#0" expanded="false" />
-            <element signature="e#368#400#0" expanded="false" />
-            <element signature="e#431#449#0" expanded="false" />
-            <element signature="e#465#492#0" expanded="false" />
-            <element signature="e#508#534#0" expanded="false" />
-            <element signature="e#550#568#0" expanded="false" />
-            <element signature="e#579#761#0" expanded="false" />
-            <element signature="e#772#954#0" expanded="false" />
-            <element signature="e#960#1321#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="36" selection-start="2177" selection-end="2177" vertical-scroll-proportion="-4.8846154">
-          <folding>
-            <element signature="n#block#0;n#!!top" expanded="false" />
-            <element signature="n#block#1;n#!!top" expanded="false" />
-            <element signature="tag#script#0" expanded="false" />
-            <element signature="n#block#5;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,11 +726,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/js/game.js">
+    <entry file="file://$PROJECT_DIR$/ttt/templates/ttt/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="765" selection-end="765" vertical-scroll-proportion="0.454435">
+        <state line="68" column="8" selection-start="2737" selection-end="2737" vertical-scroll-proportion="-12.730769">
           <folding>
-            <element signature="n#!!block;n#isSquareUsed#0" expanded="false" />
+            <element signature="n#block#0;n#!!top" expanded="false" />
+            <element signature="n#block#1;n#!!top" expanded="false" />
+            <element signature="tag#script#0" expanded="false" />
+            <element signature="n#block#5;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttt/static/ttt/css/game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="0" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.72">
+          <folding>
+            <element signature="e#215#243#0" expanded="false" />
+            <element signature="e#257#348#0" expanded="false" />
+            <element signature="e#368#400#0" expanded="false" />
+            <element signature="e#431#449#0" expanded="false" />
+            <element signature="e#465#492#0" expanded="false" />
+            <element signature="e#508#534#0" expanded="false" />
+            <element signature="e#550#568#0" expanded="false" />
+            <element signature="e#579#761#0" expanded="false" />
+            <element signature="e#772#954#0" expanded="false" />
+            <element signature="e#960#1321#0" expanded="false" />
           </folding>
         </state>
       </provider>
