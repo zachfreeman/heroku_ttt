@@ -362,9 +362,10 @@ var playerMove = 'X';
 var posList = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
 var computer = false;
 var CvH = false;
-var playList = ["HvH","HvC","CvH"]
-var playPrefix = "play-button-"
-var playButtonSelected = "HvH"
+var playList = ["HvH","HvC","CvH"];
+var playListFull = ["X:Human O:Human","X:Human O:Computer","X:Computer O:Human"];
+var playPrefix = "play-button-";
+var playButtonSelected = "HvH";
     //setting up winning lists to check
     //for each value of posList, winAssocArray contains an n-tuple of 3-move tuples, which are the possible winners
         //after playing postList in a game
