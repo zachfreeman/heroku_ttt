@@ -279,7 +279,8 @@ function resetClickers(letter,userBtnPress){
 
 //the trigger from the button for a human v human game
 function isPlayAgain(){
-    var answer = window.confirm("Play again?");
+    var mode = 'mode';
+    var answer = window.confirm("Play again?\n"+playListFull[playList.indexOf(playButtonSelected)]);
     if(answer){
         movesRemain = ["TR","TL","TC","MR","ML","MC","BR","BL","BC"];
         resetClickers("X",answer);
@@ -379,8 +380,11 @@ loadClickers(posList);
 loadPlayButtons(playList);
 
 //TO DO
-//CONTINUE WORK ON findWinningMove so that it returns the move the computer should make, or to get a hint
-//CREATE BUTTONS FOR HvH, CvH, and HvC
-//CREATE BUTTON FOR hint
-
-//Chris Chiampa - cchiampa@mit.edu - 617.258.5605
+//CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
+//IMPROVE COMPUTER AI, LOCK GAME MOVEMENT SO THAT IF USER SWITCHES MODES IN MIDDLE OF GAME, CRAZINESS DOES NOT ENSUE
+//TURN OFF HOVER AFTER END OF GAME
+//CREATE SCOREBOARD TABLE 4 rows by 4 columns
+//Mode  HvH HvC CvH
+//X
+//O
+//T
