@@ -391,6 +391,7 @@ document.getElementById("play-again-button").onclick = isPlayAgain;
 fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
+console.log("This is a test!");
 
 //TO DO
 //ADD QUERY - <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
