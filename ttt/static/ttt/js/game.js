@@ -21,9 +21,11 @@ function loadPlayButtons(playList){
 }
 
 function setPlay(elementID) {
+    //comment to explain what this does
     if(elementID.slice(-3)==playButtonSelected) {
         return;
     }
+    //explanation
     else {
         document.getElementById(playPrefix+playButtonSelected).style.backgroundColor = 'lightsteelblue';
         playButtonSelected = elementID.slice(-3);
@@ -31,16 +33,19 @@ function setPlay(elementID) {
         if(elementID==playPrefix+"HvC") {
             computer = true;
             CvH = false;
+            gameOver = false;
 //            alert("Next game played will be against a computer, human goes first!");
         }
         else if(elementID==playPrefix+"HvH") {
             computer = false;
             CvH = false;
+            gameOver = false;
 //            alert("Next game played will be against a human!");
         }
         else if(elementID==playPrefix+"CvH") {
             computer = true;
             CvH = true;
+            gameOver = false;
 //            alert("Next game played will be against a computer, computer goes first!");
         }
     }
@@ -123,14 +128,17 @@ function isSquareUsed(squareID){
 
 //determine if a move can be mode (win, tie, already moved in that square)
 function moveExit(elementID) {
-    if(winner){
-        window.alert("There is already a winner!");
+    if(gameOver){
         return true;
     }
-    else if(tie){
-        window.alert("It's a tie!");
-        return true;
-    }
+    // if(winner){
+    //     window.alert("There is already a winner!");
+    //     return true;
+    // }
+    // else if(tie){
+    //     window.alert("It's a tie!");
+    //     return true;
+    // }
     else if (elementID && isSquareUsed(elementID)){
         window.alert("This square has already been taken!");
         return true;
@@ -165,12 +173,15 @@ function userMove(elementID){
             document.getElementById(answer[i]).style.backgroundColor = 'red';
         }
         winner = playerMove;
+        gameOver = true;
         window.alert(playerMove + " has won the game!");
         updateScoreboard();
+        //set global variable 
     }
     else{
         if(movesMade.length == posList.length){
             tie = true;
+            gameOver = true;
             window.alert("It's a tie!");
             winner = "T";
             updateScoreboard();
@@ -183,7 +194,7 @@ function userMove(elementID){
     resetClickers(playerMove);
 
     //
-    if(computer && !(winner || tie)) {
+    if(computer && !(gameOver)) {
         if(CvH && playerMove=="X") {
             computerMove();
         }
@@ -366,6 +377,7 @@ var playList = ["HvH","HvC","CvH"];
 var playListFull = ["X:Human O:Human","X:Human O:Computer","X:Computer O:Human"];
 var playPrefix = "play-button-";
 var playButtonSelected = "HvH";
+var gameOver = false;
     //setting up winning lists to check
     //for each value of posList, winAssocArray contains an n-tuple of 3-move tuples, which are the possible winners
         //after playing postList in a game
@@ -381,9 +393,11 @@ loadClickers(posList);
 loadPlayButtons(playList);
 
 //TO DO
+//ADD QUERY - <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
 //IMPROVE COMPUTER AI, LOCK GAME MOVEMENT SO THAT IF USER SWITCHES MODES IN MIDDLE OF GAME, CRAZINESS DOES NOT ENSUE
 //TURN OFF HOVER AFTER END OF GAME
+//TURN OFF EFFECT OF CLICKING A CELL AFTER END OF GAME
 //CREATE SCOREBOARD TABLE 4 rows by 4 columns
 //Mode  HvH HvC CvH
 //X
