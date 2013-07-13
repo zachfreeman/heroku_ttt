@@ -169,7 +169,8 @@ function userMove(elementID){
         winner = playerMove;
         window.alert(playerMove + " has won the game!");
         updateScoreboard();
-        //set global variable 
+        //remove class, the basis for the css hover
+        $(".ttt-square").removeClass("square-hover-enabled");
     }
     else{
         if(movesMade.length == posList.length){
@@ -273,6 +274,8 @@ function resetClickers(letter,userBtnPress){
         if(winner || tie || userBtnPress){
             document.getElementById(elementID).style.color = 'white';
             document.getElementById(elementID).style.backgroundColor = 'white';
+              //if winner or tie is the reason for the call, add hover class back to square class to re-enable hover
+            //$(".ttt-square").addClass("square-hover-enabled");
         }
     }
     for (var i = 0; i < movesRemain.length; i++){
@@ -289,6 +292,7 @@ function isPlayAgain(){
         resetClickers("X",answer);
         winner = null;
         tie = null;
+        $(".ttt-square").addClass("square-hover-enabled");
         //reset movesMade array for next game
         movesMade = [];
         playerMove = "X";
@@ -382,7 +386,7 @@ document.getElementById("play-again-button").onclick = isPlayAgain;
 fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
-console.log("This is a test!");
+console.log("This is a new test!");
 
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
