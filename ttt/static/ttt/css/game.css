@@ -19,7 +19,7 @@ h1 {
     text-align: center;
 }
 
-.ttt-square:hover {
+.hover-enabled:hover {
     color: black !important;
 }
 

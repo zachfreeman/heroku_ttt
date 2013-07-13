@@ -394,7 +394,6 @@ loadPlayButtons(playList);
 console.log("This is a test!");
 
 //TO DO
-//ADD QUERY - <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
 //IMPROVE COMPUTER AI, LOCK GAME MOVEMENT SO THAT IF USER SWITCHES MODES IN MIDDLE OF GAME, CRAZINESS DOES NOT ENSUE
 //TURN OFF HOVER AFTER END OF GAME
