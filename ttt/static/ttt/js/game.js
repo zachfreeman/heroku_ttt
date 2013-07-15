@@ -49,11 +49,11 @@ function setPlay(elementID) {
 }
 
 //RELATED TO PLAYER MOVES
-function computerMove() {
+function computerMove(localMovesRemain) {
     var cornerList = ['TR','TL','BL','BR'];
     //alert('Computer thoughts:\nDo I have the first move?');
     if(movesMade.length==0) {
-        //randomly pick a corner
+        //Randomly pick a corner
         var ans = cornerList[Math.floor(Math.random()*5)];
         //alert('move '+ans+' is the one!');
         userMove(ans);
@@ -90,8 +90,8 @@ function computerMove() {
         }
     }
     //alert('Computer thoughts:\nTake whatever is left.');
-    //alert('move ' + movesRemain[0] + ' is the one!');
-    userMove(movesRemain[0]);
+    //alert('move ' + localMovesRemain[0] + ' is the one!');
+    userMove(localMovesRemain[0]);
 }
 
 
@@ -189,10 +189,10 @@ function userMove(elementID){
     //
     if(computer && !(tie || winner)) {
         if(CvH && playerMove=="X") {
-            computerMove();
+            computerMove(movesRemain);
         }
         else if(!CvH && playerMove=="O") {
-            computerMove();
+            computerMove(movesRemain);
         }
     }
 }
@@ -298,7 +298,7 @@ function isPlayAgain(){
         playerMove = "X";
         shadowBoardArray = createShadowBoard();
         if(CvH && computer) {
-            computerMove();
+            computerMove(movesRemain);
         }
     }
 }
@@ -343,6 +343,10 @@ function fillScoreboard(){
     //iterate through the remaining moves array
     //for each remaining move, swap the
 //a move preventing a win for the other player
+//a move that gives two winning moves for me next turn
+//if I move into position x from remaining moves, does that give me a winning possibility?
+  //if so, assume the oppo moves there, then assess by asking "Is there now a move that 
+    //Is there now a move that gives me two winning moves? If so, move there
 //a corner move
 //a middle move
 //a side-middle move
@@ -386,13 +390,11 @@ document.getElementById("play-again-button").onclick = isPlayAgain;
 fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
-console.log("This is a new test!");
 
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
 //IMPROVE COMPUTER AI, LOCK GAME MOVEMENT SO THAT IF USER SWITCHES MODES IN MIDDLE OF GAME, CRAZINESS DOES NOT ENSUE
-//TURN OFF HOVER AFTER END OF GAME
-//COMPLETED - TURN OFF EFFECT OF CLICKING A CELL AFTER END OF GAME 
+//TURN OFF EFFECT OF CLICKING A CELL AFTER END OF GAME 
 //CREATE SCOREBOARD TABLE 4 rows by 4 columns
 //Mode  HvH HvC CvH
 //X
