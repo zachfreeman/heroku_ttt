@@ -350,7 +350,7 @@ function fillScoreboard(){
 //a corner move
 //a middle move
 //a side-middle move
-var findWinningMove = function(player) {
+var findWinningMove = function(player,optArg) {
     //alert('entering findWinningMove');
     for(var i=0;i<movesRemain.length;i++) {
         shadowBoardArray[movesRemain[i]] = player;
