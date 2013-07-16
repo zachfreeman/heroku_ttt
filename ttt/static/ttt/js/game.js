@@ -400,7 +400,10 @@ fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
 
-
+var answer55 = window.confirm("Test animation?");
+if (answer55) {
+  $("#error-msg").addClass("enable");
+}
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
 //IMPROVE COMPUTER AI, LOCK GAME MOVEMENT SO THAT IF USER SWITCHES MODES IN MIDDLE OF GAME, CRAZINESS DOES NOT ENSUE

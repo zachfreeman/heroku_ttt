@@ -83,6 +83,24 @@ h1 {
     color: red;
 }
 
+#error-msg.enable {
+  /*Animation-related css*/
+  -webkit-animation: error-fade 1s ease;
+  -moz-animation: error-fade 1s ease;
+  -ms-animation: error-fade 1s ease;
+  -o-animation: error-fade 1s ease;
+  animation: error-fade 1s ease;
+}
+
+@keyframes error-fade {
+  0% {
+    color: red;
+  }
+  100% {
+   color: white;
+  }
+}
+
 /*Play again button stylings*/
 #play-btn-container {
     margin: auto;
