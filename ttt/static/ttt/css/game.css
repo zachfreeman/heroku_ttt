@@ -72,6 +72,13 @@ h1 {
     border-right-style: solid;
 }
 
+/*Error message stylings*/
+#error-msg {
+    font-size: 8px;
+    text-align: center;
+    font-color: red;
+}
+
 /*Play again button stylings*/
 #play-btn-container {
     margin: auto;

@@ -8,12 +8,55 @@ otherPlayer
     none
   Raises:
     Error if arg player is not in ["X',"O"]
-
-createShadowBoard
+  Notes:
+    Used to represent the player whose turn it is not
+  Called:
+    ~2 times (userMove and computerMove to switch players)
 
 isSquareUsed
+  Args:
+    squareID: string, expected to be in [list of 9 squares]
+  Returns:
+    true/false
+  Global vars:
+    movesMade
+  Raises:
+    Error if arg string is not in [list of 9 squares]
+  Notes:
+    Used to check if a given square has already been played
+  Called:
+    ~3 times (userMove to determine if valid move, computerMove to determine move)
+
+-----
+createShadowBoard
+  Args:
+    none
+  Returns:
+    associative array with "" value for all keys, 9 keys based on board positions
+  Global vars:
+    posList
+  Raises:
+    none
+  Notes:
+    Should only be called at beginning of play to initialize the 'shadow board', which
+      is a replica of the board used for logic purposes to decouple from visual board
+  Called:
+    ~2 times (on window.load and when play again button is pressed)
 
 moveExit
+  Args:
+    none
+  Returns:
+    associative array with "" value for all keys, 9 keys based on board positions
+  Global vars:
+    posList
+  Raises:
+    none
+  Notes:
+    Should only be called at beginning of play to initialize the 'shadow board', which
+      is a replica of the board used for logic purposes to decouple from visual board
+  Called:
+    ~2 times (on window.load and when play again button is pressed)
 
 updateVisibleSquare
 

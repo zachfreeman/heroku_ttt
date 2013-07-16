@@ -111,18 +111,21 @@ function otherPlayer(player) {
 function createShadowBoard() {
     var shadowBoardArray = {};
     for (var i = 0; i < posList.length; i++){
-        shadowBoardArray[posList[i]] = "";
+      shadowBoardArray[posList[i]] = "";
     }
     return shadowBoardArray;
 }
 
 //determine if a move has already been made in that square
 function isSquareUsed(squareID){
-    if(movesMade.indexOf(squareID) > -1){
-        return true;
+    if (posList.indexOf(squareID) == -1) {
+      throw new Error("isSquareUsed(): passed arg '" + squareID + "' is not a valid square id");
+    }
+    else if(movesMade.indexOf(squareID) > -1){
+      return true;
     }
     else{
-        return false;
+      return false;
     }
 }
 
@@ -396,6 +399,7 @@ setScoreboard();
 fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
+
 
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
