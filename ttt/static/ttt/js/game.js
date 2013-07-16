@@ -99,8 +99,11 @@ function otherPlayer(player) {
     if(player=="X") {
         return "O";
     }
-    else {
+    else if (player=="O") {
         return "X";
+    }
+    else {
+      throw new Error("otherPlayer(): first argument must be in ['X','O'], got " + player);
     }
 }
 

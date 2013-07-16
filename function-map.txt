@@ -1,0 +1,42 @@
+-----Utility functions-----
+otherPlayer
+  Args:
+    player: string, expected to be in ["X","O"]
+  Returns:
+    the complement of player in set ["X","O"] as a string
+  Global vars:
+    none
+  Raises:
+    Error if arg player is not in ["X',"O"]
+
+createShadowBoard
+
+isSquareUsed
+
+moveExit
+
+updateVisibleSquare
+
+updateShadowLogic
+
+userMove
+
+createWinAssocArray
+	getWinnerCombos
+	setWinnerCombos
+
+isWinningSet
+
+isWon
+
+resetClickers
+	resetClicker
+
+isPlayAgain
+
+setScoreboard
+
+updateScoreboard
+
+fillScoreboard
+
