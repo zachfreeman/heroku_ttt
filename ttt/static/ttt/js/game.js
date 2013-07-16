@@ -306,12 +306,14 @@ function isPlayAgain(){
 //SCOREBOARD RELATED
 
 //Setting up reset scoreboard button functionality
-document.getElementById("reset-btn").onclick = function(){
-    var letList = ["X","O","T"];
-    for (var i=0; i<3; i++){
-        localStorage.setItem(letList[i],0);
-        document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+0;
-    }
+function setScoreboard() {
+  document.getElementById("reset-btn").onclick = function(){
+      var letList = ["X","O","T"];
+      for (var i=0; i<letList.length; i++){
+          localStorage.setItem(letList[i],0);
+          document.getElementById(letList[i]+"_WIN").innerHTML = letList[i]+": "+0;
+      }
+  }
 }
 
 // After game, update scoreboard
@@ -387,6 +389,7 @@ var shadowBoardArray = createShadowBoard();
 //Setting up reset button
 document.getElementById("play-again-button").onclick = isPlayAgain;
 
+setScoreboard();
 fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
