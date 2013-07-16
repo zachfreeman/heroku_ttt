@@ -9,7 +9,7 @@ h1 {
 
 /*Board related styling*/
 #ttt-board-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .ttt-square {
@@ -73,10 +73,14 @@ h1 {
 }
 
 /*Error message stylings*/
+#error-msg-container {
+  margin-bottom: 10px;
+}
+
 #error-msg {
     font-size: 8px;
     text-align: center;
-    font-color: red;
+    color: red;
 }
 
 /*Play again button stylings*/
