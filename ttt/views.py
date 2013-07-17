@@ -2,6 +2,5 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def ttt_game(request):
-    # return HttpResponse(request.META['HTTP_HOST'])
+def ttt_2d(request):
     return render(request,'ttt/game.html',{})

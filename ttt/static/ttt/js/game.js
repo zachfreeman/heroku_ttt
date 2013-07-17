@@ -49,6 +49,19 @@ function setPlay(elementID) {
 }
 
 //RELATED TO PLAYER MOVES
+  //RELATED TO COMPUTER OPPONENT
+  //computer algorithm
+  //a winning move from the remaining move set on the board
+      //iterate through the remaining moves array
+      //for each remaining move, swap the
+  //a move preventing a win for the other player
+  //a move that gives two winning moves for me next turn
+  //if I move into position x from remaining moves, does that give me a winning possibility?
+    //if so, assume the oppo moves there, then assess by asking "Is there now a move that 
+      //Is there now a move that gives me two winning moves? If so, move there
+  //a corner move
+  //a middle move
+  //a side-middle move
 function computerMove(localMovesRemain) {
     var cornerList = ['TR','TL','BL','BR'];
     //alert('Computer thoughts:\nDo I have the first move?');
@@ -59,20 +72,30 @@ function computerMove(localMovesRemain) {
         userMove(ans);
         return;
     }
-    //alert('Computer thoughts:\nCan I win with the next move?');
+    //alert('Computer thoughts:\nCan I win with this move?');
     ans = findWinningMove(playerMove);
     if(ans[0]) {
         //alert('move '+ans[1]+' is the one!');
         userMove(ans[1]);
         return;
     }
-    //alert('Computer thoughts:\nCan the opponent win with the next move?');
+    //alert('Computer thoughts:\nCan the opponent win with this move?');
     ans = findWinningMove(otherPlayer(playerMove));
     if(ans[0]) {
         //alert('move '+ans[1]+' is the one!');
         userMove(ans[1]);
         return;
     }
+    //Is there a move this turn that gives me two winning moves next turn?
+      //if so, make it
+
+    //Is there a move that gives me a winning move next turn?
+      //If so, assume I make that move, and that opponent responds by blocking winner
+        //Does the opponent's move set him up for two winners?
+          //If so, don't make that move
+        //In this world 2 plays ahead, is there a move I can do that gives me two winners after that?
+          //If so, make it
+
     //alert('Computer thoughts:\nIs the center free?');
     if(!(isSquareUsed('MC'))) {
         //alert('move MC is the one!');
@@ -212,8 +235,6 @@ function userMove(elementID){
         }
     }
 }
-
-
 
 //RELATED TO DETERMINING IF THERE IS A WINNER
 function createWinAssocArray() {
@@ -355,19 +376,6 @@ function fillScoreboard(){
     }
 }
 
-//RELATED TO COMPUTER OPPONENT
-//computer algorithm
-//a winning move from the remaining move set on the board
-    //iterate through the remaining moves array
-    //for each remaining move, swap the
-//a move preventing a win for the other player
-//a move that gives two winning moves for me next turn
-//if I move into position x from remaining moves, does that give me a winning possibility?
-  //if so, assume the oppo moves there, then assess by asking "Is there now a move that 
-    //Is there now a move that gives me two winning moves? If so, move there
-//a corner move
-//a middle move
-//a side-middle move
 var findWinningMove = function(player,optArg) {
     //alert('entering findWinningMove');
     for(var i=0;i<movesRemain.length;i++) {

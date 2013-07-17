@@ -45,18 +45,13 @@ createShadowBoard
 
 moveExit
   Args:
-    none
   Returns:
-    associative array with "" value for all keys, 9 keys based on board positions
   Global vars:
-    posList
   Raises:
-    none
   Notes:
-    Should only be called at beginning of play to initialize the 'shadow board', which
-      is a replica of the board used for logic purposes to decouple from visual board
   Called:
-    ~2 times (on window.load and when play again button is pressed)
+
+applyMessage
 
 updateVisibleSquare
 
