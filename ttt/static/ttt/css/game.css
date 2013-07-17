@@ -9,7 +9,7 @@ h1 {
 
 /*Board related styling*/
 #ttt-board-container {
-    margin-bottom: 20px;
+    margin-bottom: 2.5px;
 }
 
 .ttt-square {
@@ -74,30 +74,89 @@ h1 {
 
 /*Error message stylings*/
 #error-msg-container {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #error-msg {
-    font-size: 8px;
+    font-size: 10px;
     text-align: center;
-    color: red;
+    color: white;
 }
 
 #error-msg.enable {
   /*Animation-related css*/
-  -webkit-animation: error-fade 1s ease;
-  -moz-animation: error-fade 1s ease;
-  -ms-animation: error-fade 1s ease;
-  -o-animation: error-fade 1s ease;
-  animation: error-fade 1s ease;
+  -webkit-animation-name: error-fade;
+  -webkit-animation-duration: 2s;
+  -moz-animation-name: error-fade;
+  -moz-animation-duration: 2s;
+  -ms-animation-name: error-fade;
+  -ms-animation-duration: 2s;
+  animation-name: error-fade;
+  animation-duration: 2s;
 }
 
-@keyframes error-fade {
+@-ms-keyframes error-fade {
   0% {
+    color: white;
+  }
+  33% {
     color: red;
+    font-weight: bold;
+  }
+  66% {
+    color: red;
+    font-weight: bold;
   }
   100% {
-   color: white;
+    color: white;
+  }
+}
+@-moz-keyframes error-fade {
+  0% {
+    color: white;
+  }
+  33% {
+    color: red;
+    font-weight: bold;
+  }
+  66% {
+    color: red;
+    font-weight: bold;
+  }
+  100% {
+    color: white;
+  }
+}
+@-webkit-keyframes error-fade {
+  0% {
+    color: white;
+  }
+  33% {
+    color: red;
+    font-weight: bold;
+  }
+  66% {
+    color: red;
+    font-weight: bold;
+  }
+  100% {
+    color: white;
+  }
+}  
+@keyframes error-fade {
+  0% {
+    color: white;
+  }
+  33% {
+    color: red;
+    font-weight: bold;
+  }
+  66% {
+    color: red;
+    font-weight: bold;
+  }
+  100% {
+    color: white;
   }
 }
 

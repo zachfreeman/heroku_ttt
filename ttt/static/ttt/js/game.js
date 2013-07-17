@@ -131,16 +131,26 @@ function isSquareUsed(squareID){
 
 //determine if a move can be mode (win, tie, already moved in that square)
 function moveExit(elementID) {
+    function applyMessage(text) {
+      var errorMsg = $("#error-msg");
+      errorMsg.text(text);
+      errorMsg.addClass("enable");
+      errorMsg.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+        function(e) {
+          errorMsg.removeClass("enable");
+        }
+      );
+    }
     if(winner){
-        window.alert("There is already a winner!");
+        applyMessage("There is already a winner!");
         return true;
     }
     else if(tie){
-        window.alert("It's a tie!");
+        applyMessage("It's a tie!");
         return true;
     }
     else if (elementID && isSquareUsed(elementID)){
-        window.alert("This square has already been taken!");
+        applyMessage("That square is already used!");
         return true;
     }
 }
@@ -391,6 +401,7 @@ var playButtonSelected = "HvH";
 
 var winAssocArray = createWinAssocArray();
 var shadowBoardArray = createShadowBoard();
+var tempCount = 0;
 
 //Setting up reset button
 document.getElementById("play-again-button").onclick = isPlayAgain;
@@ -400,10 +411,6 @@ fillScoreboard();
 loadClickers(posList);
 loadPlayButtons(playList);
 
-var answer55 = window.confirm("Test animation?");
-if (answer55) {
-  $("#error-msg").addClass("enable");
-}
 //TO DO
 //CONTINUE WORK ON findWinningMove so that it returns the move the computer should make
 //IMPROVE COMPUTER AI, LOCK GAME MOVEMENT SO THAT IF USER SWITCHES MODES IN MIDDLE OF GAME, CRAZINESS DOES NOT ENSUE
