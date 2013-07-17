@@ -1,0 +1,98 @@
+{% load staticfiles %}
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="{% static "ttt/css/three_d_2.css" %}">
+</head>
+  <body>
+  <div id="move-container">
+    <input type="text" class="user-input-box">
+    <input type="text" class="user-input-box">
+    <input type="text" class="user-input-box">
+    <input type="submit" value="submit">
+  </div>
+  <script src="https://raw.github.com/mrdoob/three.js/master/build/three.js"></script>
+  <script src="https://raw.github.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+  <script>
+  var camera, scene, renderer, geometry, material, mesh;
+
+  init();
+  animate();
+
+  function init() {
+
+      //scene
+      scene = new THREE.Scene();
+
+      //camera
+      camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
+      camera.position.z = 7;
+      scene.add(camera);
+
+      //create wireframe for board
+      function create_lines(){
+          function create_line(coord1,coord2,color_val){
+                  {#x,y,z coordinates by array#}
+                  // geometry
+                  var geometry = new THREE.Geometry();
+                  geometry.vertices.push(new THREE.Vector3(coord1[0],coord1[1],coord1[2]));
+                  geometry.vertices.push(new THREE.Vector3(coord2[0],coord2[1],coord2[2]));
+
+                  // material
+                  var material = new THREE.LineBasicMaterial({color: color_val});
+
+                  // create line and return it
+                  return new THREE.Line(geometry,material);
+              }
+          for(j=-1;j<3;j++){
+              for(k=-1;k<3;k++){
+                  // x lines - red
+                  scene.add(create_line([-1,j,k],[2,j,k],0xff0000));
+                  // y lines - blue
+                  scene.add(create_line([j,-1,k],[j,2,k],0x0000ff));
+                  // z lines - black
+                  scene.add(create_line([j,k,-1],[j,k,2],0x000));
+              }
+          }
+        }
+        create_lines();
+
+        function addSphere(){
+
+            // geometry, sphere, and material
+
+            var sphere = new THREE.Mesh(new THREE.SphereGeometry(0.25, 20, 20)); //this line is not completing
+            sphere.position.set(-0.5,0.5,0.5);
+            scene.add(sphere);
+
+        }
+        addSphere();
+
+      //renderer
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      document.body.appendChild(renderer.domElement);
+
+      // controls
+      controls = new THREE.OrbitControls( camera, renderer.domElement );
+  }
+
+  function animate() {
+
+      requestAnimationFrame(animate);
+      render();
+      controls.update();
+
+  }
+
+  function render() {
+
+      //mesh.rotation.x += 0.01;
+      //mesh.rotation.y += 0.02;
+
+      renderer.render(scene, camera);
+
+  }
+  </script>
+  </body>
+</html>

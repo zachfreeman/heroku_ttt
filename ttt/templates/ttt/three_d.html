@@ -4,27 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>My first Three.js app</title>
-    <link type='text/css' rel='stylesheet' href="{% static 'ttt/css/' %}">
+    <link type='text/css' rel='stylesheet' href="{% static 'ttt/css/three_d.css' %}">
 </head>
 <body>
 
     <div id="canvas-container">
         <canvas>Your browser doesn't support canvas</canvas>
     </div>
-    <div id="test">
-        <p>This is some text</p>
-    </div>
     <script src="https://raw.github.com/mrdoob/three.js/master/build/three.js"></script>
     <script src="https://raw.github.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
     <script>
 
         // renderer
-        renderer = new THREE.CanvasRenderer();
+        //renderer = new THREE.CanvasRenderer();
+        renderer = new THREE.WebGLRenderer();
         renderer.setSize( window.innerWidth, window.innerHeight );
         document.body.appendChild( renderer.domElement );
 
         // scene
-		var scene = new THREE.Scene();
+        var scene = new THREE.Scene();
 
         // camera
         var camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight, 1, 1000 );
@@ -66,18 +64,16 @@
             // geometry, sphere, and material
 
             var sphere = new THREE.Mesh(new THREE.SphereGeometry(0.25, 20, 20)); //this line is not completing
-            alert("in sphere");
             sphere.position.set(0,0,0);
             scene.add(sphere);
 
         }
-        alert('test');
-        addSphere();
-        alert('test2');
+        //addSphere();
 
         // projector
         projector = new THREE.Projector();
 
+        /*
         // listeners
         document.addEventListener( 'mousedown', onDocumentMouseDown, false);
 
@@ -104,7 +100,7 @@
             }
 
         }
-
+        */
 
         function render(){
             requestAnimationFrame(render);
